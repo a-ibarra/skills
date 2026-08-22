@@ -1,0 +1,11 @@
+# Project Log
+
+## Entries
+
+- <YYYY-MM-DDTHH:MM:SSZ> initialized project `<project-id>`
+- <YYYY-MM-DDTHH:MM:SSZ> planning requested
+- <YYYY-MM-DDTHH:MM:SSZ> plan approved
+- <YYYY-MM-DDTHH:MM:SSZ> unit U01 started
+- <YYYY-MM-DDTHH:MM:SSZ> unit U01 checkpointed (session ceiling)
+- <YYYY-MM-DDTHH:MM:SSZ> unit U01 completed
+

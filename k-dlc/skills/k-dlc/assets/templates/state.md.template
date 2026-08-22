@@ -1,0 +1,27 @@
+# State
+
+- Project: <project-id>
+- Created: <YYYY-MM-DD>
+- Last Updated: <YYYY-MM-DD>
+- Status: active
+- Current Phase: planning
+- Current Unit: none
+- Context Ceiling: 300000
+- Plan Approved: no
+- Plan Approved At: n/a
+- Jira Ticket Key: n/a
+- Commit Format: conventional
+- Commit Prefix: n/a
+- Last Commit: n/a
+
+## Unit Status
+
+| Unit | Title | Status | Last Session |
+|------|-------|--------|--------------|
+
+## Session Summary
+
+- Last checkpoint: none
+- Next action: run `k-dlc-plan`
+- Commit policy: split changes into small, logical commits
+

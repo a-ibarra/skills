@@ -1,0 +1,37 @@
+# Plan
+
+## Project
+
+- Project: <project-id>
+- Goal: <goal>
+- Scope: <scope>
+- Out of scope: <out-of-scope>
+
+## Risks
+
+- <risk-1>
+
+## Open Questions
+
+- [ASK USER] <question-1>
+
+## Commit Strategy
+
+- Jira Ticket Key: <DEV-1234 | n/a>
+- Preferred Style:
+  - If ticket key provided: `<TICKET> - <summary>`
+  - Otherwise: conventional commits (`feat`, `fix`, `chore`, `docs`, etc.)
+- Commit Granularity: small logical commits, never one giant end-only commit
+
+## Units
+
+| Unit | Title | Objective | Acceptance Criteria | Status |
+|------|-------|-----------|---------------------|--------|
+| U01 | <title> | <objective> | <criteria> | planned |
+
+## Approval
+
+- Plan Approved: no
+- Approved By: n/a
+- Approved At: n/a
+

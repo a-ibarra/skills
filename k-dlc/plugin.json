@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "k-dlc",
+  "description": "Agent skills for a lightweight development lifecycle with enforced planning, phased execution, and resumable project state.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Kerzon Studios"
+  }
+}
