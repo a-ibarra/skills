@@ -6,8 +6,13 @@ Thanks for contributing to this public repository.
 
 This repository ships portable marketplace-ready skills:
 
-- `k-create-skill`
-- `k-onboard`
+- Plugin `k-skills`:
+  - `k-create-skill`
+  - `k-onboard`
+- Plugin `k-dlc`:
+  - `k-dlc`
+  - `k-dlc-plan`
+  - `k-dlc-construct`
 
 Contributions should keep skills repository-agnostic and easy to invoke.
 
@@ -36,7 +41,13 @@ Before opening a PR:
 - No unexpected organization-specific wording.
 - No `.py` files added.
 - Skill links resolve.
-- `plugin.json`, `.claude-plugin/*`, and skill names are consistent.
+- plugin manifests and marketplace manifests stay coherent:
+  - `plugin.json`
+  - `.claude-plugin/plugin.json`
+  - `.claude-plugin/marketplace.json`
+  - `.cursor-plugin/marketplace.json`
+  - `k-dlc/plugin.json`
+  - `k-dlc/.claude-plugin/plugin.json`
 - Trigger evals include should-fire and should-not-fire examples.
 
 Also review [`docs/quality-checklist.md`](docs/quality-checklist.md).

@@ -9,8 +9,11 @@ Use this checklist before merging changes in Kerzon Skills.
 - [ ] No Python files/tooling were added in v1.
 - [ ] Marketplace manifests stay coherent:
   - `plugin.json`
+  - `.cursor-plugin/marketplace.json`
   - `.claude-plugin/plugin.json`
   - `.claude-plugin/marketplace.json`
+  - `k-dlc/plugin.json`
+  - `k-dlc/.claude-plugin/plugin.json`
 
 ## Skill-Level
 
@@ -19,6 +22,7 @@ Use this checklist before merging changes in Kerzon Skills.
 - [ ] Shared nested-agent `## Execution` guidance is present.
 - [ ] References are one level deep and links resolve.
 - [ ] Trigger evals include should-fire and should-not-fire cases.
+- [ ] Planning/construct skills never claim organization-specific workflows.
 
 ## Contribution Hygiene
 

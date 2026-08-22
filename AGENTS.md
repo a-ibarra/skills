@@ -10,6 +10,9 @@ This repository ships marketplace-ready skills for Kerzon Studios.
 - Keep the shared `## Execution` rule: nested agent first, inline only when
   unavailable.
 - Do not add Python tooling in v1.
+- Keep plugin boundaries clear:
+  - root plugin `k-skills`
+  - sibling plugin `k-dlc/`
 - For commits in this repository, use author/committer email
   `aibarrakerzon@gmail.com`.
 
@@ -19,3 +22,5 @@ This repository ships marketplace-ready skills for Kerzon Studios.
 - No `.py` files in the tree.
 - Skill links resolve.
 - Plugin/manifests and skill names stay consistent.
+- Multi-plugin marketplace entries (`.claude-plugin/marketplace.json`,
+  `.cursor-plugin/marketplace.json`) stay consistent with plugin folders.
