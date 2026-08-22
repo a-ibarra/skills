@@ -10,6 +10,8 @@ This repository ships marketplace-ready skills for Kerzon Studios.
 - Keep the shared `## Execution` rule: nested agent first, inline only when
   unavailable.
 - Do not add Python tooling in v1.
+- For commits in this repository, use author/committer email
+  `aibarrakerzon@gmail.com`.
 
 ## Required Checks Before Claiming Done
 
