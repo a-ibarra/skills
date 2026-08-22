@@ -1,0 +1,46 @@
+---
+name: k-example-skill
+description: Explain what this skill does and when to use it.
+license: Apache-2.0
+metadata:
+  owner: kerzon-studios
+  execution: subagent
+---
+
+# Example Skill Title
+
+## Execution
+
+Run this skill in a nested agent. If nested agents are unavailable, state that
+once and continue inline.
+
+## What This Produces
+
+- Output artifact 1
+- Output artifact 2
+
+## When to Use
+
+- Trigger 1
+- Trigger 2
+
+## When Not to Use
+
+- Near-neighbor case 1 -> route to another skill
+- Near-neighbor case 2 -> route to another skill
+
+## Procedure
+
+1. Step one.
+2. Step two.
+3. Step three.
+
+## Validation
+
+- Folder name equals frontmatter name
+- Description includes what + when
+- Required links resolve
+
+## References
+
+- [references/example.md](references/example.md)
