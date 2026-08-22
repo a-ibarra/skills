@@ -55,3 +55,10 @@ skills/
 ## License
 
 Apache-2.0. See `LICENSE`.
+
+## Governance
+
+- [Contributing guide](CONTRIBUTING.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Security policy](SECURITY.md)
+- [Quality checklist](docs/quality-checklist.md)
