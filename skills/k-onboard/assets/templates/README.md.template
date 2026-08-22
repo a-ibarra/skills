@@ -1,0 +1,20 @@
+> verified against <sha> on <YYYY-MM-DD>
+
+# Codebase Context
+
+## How To Use
+
+- Start with `ARCHITECTURE.md` for structure and one traced flow.
+- Use `WORKFLOWS.md` for repeatable commands/processes documented in repo files.
+- Use `CONCERNS.md` for risks and divergence notes.
+
+## File Map
+
+- `ARCHITECTURE.md`
+- `STACK.md`
+- `CONVENTIONS.md`
+- `WORKFLOWS.md`
+- `DATA.md`
+- `INTEGRATIONS.md`
+- `TESTING.md`
+- optional: `DOMAIN.md`, `CONCERNS.md`

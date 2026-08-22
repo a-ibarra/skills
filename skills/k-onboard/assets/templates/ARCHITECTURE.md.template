@@ -1,0 +1,20 @@
+> verified against <sha> on <YYYY-MM-DD>
+
+# Architecture
+
+## Components
+
+- Component A: responsibility and boundary
+- Component B: responsibility and boundary
+
+## Traced Flow
+
+Example pattern:
+
+`entry -> service -> persistence -> side effect -> response`
+
+Replace with concrete paths from the target repository.
+
+## Diagram (Optional)
+
+Use a Mermaid diagram only when it clarifies flow or boundaries.
