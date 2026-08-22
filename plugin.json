@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "k-skills",
+  "description": "Agent skills from Kerzon Studios for creating portable skills and onboarding codebases.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Kerzon Studios"
+  }
+}

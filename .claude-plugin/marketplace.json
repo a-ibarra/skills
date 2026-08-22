@@ -1,0 +1,17 @@
+{
+  "name": "k-skills",
+  "owner": {
+    "name": "Kerzon Studios"
+  },
+  "plugins": [
+    {
+      "name": "k-skills",
+      "source": "./",
+      "description": "Agent skills from Kerzon Studios for creating portable skills and onboarding codebases.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Kerzon Studios"
+      }
+    }
+  ]
+}
