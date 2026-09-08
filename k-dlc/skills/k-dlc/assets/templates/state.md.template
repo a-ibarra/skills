@@ -1,6 +1,10 @@
 # State
 
 - Project: <project-id>
+- Workspace Mode: default
+- Workspace Root: .k-dlc
+- Project Dir: .k-dlc/<project-id>
+- App Repo: n/a
 - Created: <YYYY-MM-DD>
 - Last Updated: <YYYY-MM-DD>
 - Status: active

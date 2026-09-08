@@ -1,6 +1,6 @@
 ---
 name: k-dlc-plan
-description: Enforce a non-skippable planning gate for an active .k-dlc project, produce unitized implementation plans, and record explicit user approval before construction. Use when goals are proposed or construction is requested without an approved plan.
+description: Enforce a non-skippable planning gate for an active k-dlc project, produce unitized implementation plans, and record explicit user approval before construction. Use when goals are proposed or construction is requested without an approved plan.
 license: Apache-2.0
 metadata:
   owner: kerzon-studios
@@ -23,18 +23,34 @@ Do not ask the user to choose a model tier.
 
 ## What This Produces
 
-- Updated `.k-dlc/<project-id>/plan.md` with phased units.
-- Unit brief files under `.k-dlc/<project-id>/units/`.
-- Updated `.k-dlc/<project-id>/state.md` approval fields.
+- Updated `plan.md` with phased units in the recorded project dir.
+- Unit brief files under `<project-dir>/units/`.
+- Updated `state.md` approval fields.
 - Commit strategy metadata used by construction commits.
+
+Default project dir is `.k-dlc/<project-id>/` when no redirect is recorded.
 
 ## When to Use
 
 Use this skill when:
 
-- user gives a new goal for an active `.k-dlc` project
+- user gives a new goal for an active k-dlc project
 - user asks to implement/fix/build but no approved plan exists
 - an existing plan is stale relative to new scope
+
+## When Not to Use
+
+- Initialize or resume a lifecycle project -> `k-dlc`
+- Execute approved units -> `k-dlc-construct`
+- Onboarding or codebase documentation -> `k-onboard`
+
+## Workspace
+
+Load files from the project directory recorded in `state.md` (`Workspace Root`
+and `Project Dir`). Default remains `.k-dlc/<project-id>/` when no redirect is
+recorded. Never create `.k-dlc/` when redirect is in effect. Never write,
+rewrite, merge, or refresh `WORKING-WITH-AIDLC.md`. Dual-repo: keep DLC files in
+the workspace repo; do not write into the declared app repo.
 
 ## Planning Contract
 
@@ -42,11 +58,13 @@ Use this skill when:
 2. The gate is enforced by workflow rules in all `k-dlc` skills.
 3. Construction must not run in the same turn as an unapproved plan.
 4. Approval must be explicit and written in `state.md`.
+5. A later goal after init is this skill. Do not treat "construction prompt"
+   as `k-dlc-construct`.
 
 ## Procedure
 
 1. **Load current state**
-   - Read `.k-dlc/<project-id>/state.md` and `plan.md`.
+   - Read `state.md` and `plan.md` from the recorded Project Dir.
    - Detect whether prior approval is still valid for current request scope.
 
 2. **Use cheapest practical planning tier**
@@ -90,6 +108,7 @@ Use this skill when:
 
 - Do not bypass planning when user requests direct execution.
 - Do not claim a technical lock beyond what the workflow can enforce.
+- Do not write, rewrite, merge, or refresh `WORKING-WITH-AIDLC.md`.
 - Keep language generic and IDE-agnostic.
 - Ensure commit strategy is always decided before construction starts.
 
