@@ -15,6 +15,17 @@ Every unit brief should include:
 - relevant file pointers
 - exact next step
 
+File pointers (Relevant Files, resume briefs, plan notes) must be
+**repo-relative**, never machine-absolute. Collaborators will not share
+`/Users/...` or `C:\...` checkout paths.
+
+- Application code: relative to the app repo root (or the current repo
+  when there is no dual-repo split). Example: `src/auth/session.ts`
+- DLC state files: relative to the workspace repo root. Example:
+  `ai-dlc/bolt/<project-id>/units/U01.md`
+- If an existing brief already has an absolute path, rewrite it to
+  relative before saving. Do not leave both.
+
 ## Commit strategy decision
 
 Before plan approval, collect one of:

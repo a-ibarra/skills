@@ -14,3 +14,4 @@
 - "Initialize a new lifecycle project called fix-something." (use `k-dlc`)
 - "Generate onboarding docs for this codebase." (use `k-onboard`)
 - "Rewrite WORKING-WITH-AIDLC.md while planning." (never rewrite the guide)
+- "Put /Users/me/proj/src/app.ts in Relevant Files." (use repo-relative paths)

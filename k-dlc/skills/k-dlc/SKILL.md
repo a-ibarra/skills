@@ -129,6 +129,8 @@ Use this skill when the user asks to:
   init; leave a valid guide alone on resume.
 - Refresh means replace the vendored asset so future inits get the new copy.
   Do not edit the guide inside an existing project unless the user asks.
+- Persist repo-relative paths in unit briefs, plans, and logs. Never
+  machine-absolute checkout paths.
 - Keep instructions IDE-agnostic and repository-agnostic.
 - Avoid company-specific terms and workflows.
 

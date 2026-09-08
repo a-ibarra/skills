@@ -86,6 +86,10 @@ the workspace repo; do not write into the declared app repo.
    - Create or update one unit brief per unit in `units/`.
    - Each unit brief must be sufficient for a fresh session with no chat
      history.
+   - **Relevant Files** and other path pointers must be repo-relative
+     (the repo that contains the file). Never write machine-absolute
+     paths (`/Users/...`, `C:\...`). If an existing brief has absolute
+     paths, rewrite them to relative before saving.
 
 4. **Stop for approval**
    - Present plan summary to user.
@@ -109,6 +113,7 @@ the workspace repo; do not write into the declared app repo.
 - Do not bypass planning when user requests direct execution.
 - Do not claim a technical lock beyond what the workflow can enforce.
 - Do not write, rewrite, merge, or refresh `WORKING-WITH-AIDLC.md`.
+- Persist repo-relative paths only. Never machine-absolute checkout paths.
 - Keep language generic and IDE-agnostic.
 - Ensure commit strategy is always decided before construction starts.
 

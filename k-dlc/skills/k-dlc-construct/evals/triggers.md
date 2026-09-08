@@ -14,3 +14,4 @@
 - "Initialize project state for a new project key." (use `k-dlc`)
 - "Show me all lifecycle projects and statuses." (use `k-dlc`)
 - "Refresh WORKING-WITH-AIDLC.md during construction." (never rewrite the guide)
+- "Record /Users/me/proj/src/app.ts in the unit Relevant Files." (use repo-relative paths)

@@ -70,6 +70,11 @@ If any precondition fails, stop and route to `k-dlc-plan`. Do not treat a
      - the unit brief file
      - relevant repository files for that unit
    - Do not pass full parent transcript when avoidable.
+   - When updating **Relevant Files**, resume briefs, or other persisted
+     notes, write repo-relative paths only (the repo that contains the
+     file). Never machine-absolute paths (`/Users/...`, `C:\...`). If the
+     unit already has absolute paths, rewrite them to relative before
+     saving.
 
 3. **Apply commit policy during execution**
    - Read commit strategy from `state.md`:
@@ -116,6 +121,7 @@ If any precondition fails, stop and route to `k-dlc-plan`. Do not treat a
 - Never run when plan approval is missing.
 - Never continue execution past the context ceiling target.
 - Never write, rewrite, merge, or refresh `WORKING-WITH-AIDLC.md`.
+- Persist repo-relative paths only. Never machine-absolute checkout paths.
 - Keep handoff notes deterministic and file-backed.
 - Avoid a single monolithic commit for all project work.
 

@@ -31,3 +31,7 @@ state instead of long chat history.
 - Next exact step:
 - Validation still needed:
 
+File paths in the resume brief and in **Relevant Files** must be
+repo-relative (the repo that contains the file), never machine-absolute.
+Rewrite any `/Users/...` or `C:\...` paths to relative before saving.
+

@@ -11,8 +11,10 @@
 
 ## Relevant Files
 
-- <path-1>
-- <path-2>
+Paths are relative to the repo that contains the file. Never machine-absolute.
+
+- <src/example.ts>
+- <packages/api/example.ts>
 
 ## Implementation Notes
 
